@@ -55,7 +55,7 @@ async function verifyProduction() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email: 'tpo@gcoen.ac.in',
-          password: 'CareerOS@2026',
+          password: process.env.TEST_PASSWORD || 'CareerOS@2026',
         }),
       });
       return { status: res.status, data: await res.json() };
