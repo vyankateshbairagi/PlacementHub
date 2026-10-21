@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment Secrets
+.env
+.env*.local
+**/.env
+**/.env*.local
+!**/.env.example
+
+# Python Virtual Environments & Cache
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+**/build/
+dist/
+**/dist/
+
+# Next.js Build Output
+.next/
+**/.next/
+out/
+**/out/
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test_results.json
+scripts/test_results.json
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

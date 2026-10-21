@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'liga';
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+:root {
+  /* LIGHT MODE (ThinkBuild Corporate Stitch Palette: Clean, executive, 100% readable contrast) */
+  --background: #F7F9FC;
+  --foreground: #20262B;
+  --bg-deep: #EBF1F6;
+  --card-bg: #FFFFFF;
+  --card-elevated: #FFFFFF;
+  --card-border: #E3E8EE;
+  --border-subtle: #E3E8EE;
+  --border-muted: #BDC8D0;
+  --muted-text: #5F6B76;
+  --primary-navy: #075F8F;
+  --primary-accent: #16A9E0;
+  --think-blue: #16A9E0;
+  --think-cyan: #0788C2;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sora: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-manrope: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.dark {
+  /* DARK MODE (Refined, professional slate-navy, no blinding gradients) */
+  --background: #0B1118;
+  --foreground: #F6FAFF;
+  --bg-deep: #06090E;
+  --card-bg: #111A24;
+  --card-elevated: #162230;
+  --card-border: rgba(227, 232, 238, 0.12);
+  --border-subtle: rgba(227, 232, 238, 0.08);
+  --border-muted: rgba(227, 232, 238, 0.18);
+  --muted-text: #8B96A1;
+  --primary-navy: #075F8F;
+  --primary-accent: #16A9E0;
+  --think-blue: #16A9E0;
+  --think-cyan: #0788C2;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  letter-spacing: -0.011em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
+}
+
+/* ==========================================================================
+   2005 - 2010 ERP SOFTWARE COMPONENT SYSTEM (Udyog & UtilityCube Inspired)
+   Combined with modern 21st.dev / ReactBits precision craftsmanship
+   ========================================================================== */
+
+/* 1. ERP Panel / Window Box */
+.erp-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.erp-panel:hover {
+  border-color: #94A3B8;
+  box-shadow: 0 4px 12px 0 rgba(15, 23, 42, 0.08);
+}
+
+.dark .erp-panel:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* 2. ERP Panel Header Ribbon (Classic enterprise window header) */
+.erp-panel-header {
+  padding: 0.625rem 1rem;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #334155;
+}
+
+.dark .erp-panel-header {
+  background-color: #0A0F1D;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  color: #CBD5E1;
+}
+
+/* 3. ERP Card & Think Card (Universal High Contrast) */
+.erp-card, .think-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+  color: var(--foreground);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.erp-card:hover, .think-card:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 4px 12px 0 rgba(15, 23, 42, 0.08);
+}
+
+.dark .erp-card:hover, .dark .think-card:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* 4. Enterprise Data Table */
+.erp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+  text-align: left;
+}
+
+.erp-table th {
+  padding: 0.625rem 0.875rem;
+  background-color: #F1F5F9;
+  color: #475569;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--card-border);
+  border-right: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.dark .erp-table th {
+  background-color: #0B1020;
+  color: #94A3B8;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.06);
+}
+
+.erp-table td {
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  color: var(--foreground);
+}
+
+.dark .erp-table td {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+  border-right-color: rgba(255, 255, 255, 0.04);
+}
+
+.erp-table tr:hover {
+  background-color: #F8FAFC;
+}
+
+.dark .erp-table tr:hover {
+  background-color: #121A30;
+}
+
+/* 5. Enterprise Status Bar (Bottom / Top Telemetry) */
+.erp-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.375rem 1rem;
+  background-color: #E2E8F0;
+  border: 1px solid var(--card-border);
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: #475569;
+}
+
+.dark .erp-status-bar {
+  background-color: #0B1020;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #94A3B8;
+}
+
+/* 6. High Contrast Think Gradient & Text */
+.think-gradient-text {
+  background: linear-gradient(135deg, #1E3A8A 0%, #0066FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .think-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 7. Action Buttons */
+.erp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  border: 1px solid #172554;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.erp-btn-primary:hover {
+  background-color: #1D4ED8;
+  border-color: #1E40AF;
+  transform: translateY(-1px);
+}
+
+.erp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
+  transition: all 0.15s ease;
+}
+
+.dark .erp-btn-secondary {
+  background-color: #121A30;
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.erp-btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+}
+
+.dark .erp-btn-secondary:hover {
+  background-color: #1A2440;
+}
+
+/* 8. Modern Input */
+.erp-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+  color: var(--foreground);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.erp-input:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.dark .erp-input:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* 9. Badges */
+.think-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
