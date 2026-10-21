@@ -20,7 +20,7 @@ export const TEST_CREDENTIALS: Record<UserRole, { email: string; password: strin
     roleName: 'Training & Placement Officer',
   },
   RECRUITER: {
-    email: 'recruiter.google@alphabet.com',
+    email: 'recruiter.google@placementhub.org',
     password: 'CareerOS@2026',
     roleName: 'Recruiter (Google India)',
   },
@@ -30,7 +30,7 @@ export const TEST_CREDENTIALS: Record<UserRole, { email: string; password: strin
     roleName: 'Faculty Mentor',
   },
   ALUMNI: {
-    email: 'alumni.amit@amazon.com',
+    email: 'alumni.amit@placementhub.org',
     password: 'CareerOS@2026',
     roleName: 'Alumni (Amazon AWS)',
   },

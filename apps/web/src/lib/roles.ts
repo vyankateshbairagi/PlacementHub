@@ -42,7 +42,7 @@ export const ROLE_PROFILES: Record<UserRole, UserSession> = {
   },
   RECRUITER: {
     name: 'Arjun Nambiar',
-    email: 'recruiter.google@alphabet.com',
+    email: 'recruiter.google@placementhub.org',
     role: 'RECRUITER',
     avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
     badge: 'Campus Talent Lead • Google India',
@@ -62,7 +62,7 @@ export const ROLE_PROFILES: Record<UserRole, UserSession> = {
   },
   ALUMNI: {
     name: 'Amit Joshi',
-    email: 'alumni.amit@amazon.com',
+    email: 'alumni.amit@placementhub.org',
     role: 'ALUMNI',
     avatarUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80',
     badge: 'SDE-II • Amazon (Batch 2022)',

@@ -144,7 +144,7 @@ async function main() {
   // 7. Create Recruiters
   const googleRecruiter = await prisma.user.create({
     data: {
-      email: 'recruiter.google@alphabet.com',
+      email: 'recruiter.google@placementhub.org',
       name: 'Arjun Nambiar',
       role: Role.RECRUITER,
       passwordHash,
@@ -165,7 +165,7 @@ async function main() {
 
   const zomatoRecruiter = await prisma.user.create({
     data: {
-      email: 'recruiter.zomato@zomato.com',
+      email: 'recruiter.zomato@placementhub.org',
       name: 'Rohan Mehra',
       role: Role.RECRUITER,
       passwordHash,
@@ -186,7 +186,7 @@ async function main() {
 
   const msRecruiter = await prisma.user.create({
     data: {
-      email: 'recruiter.ms@microsoft.com',
+      email: 'recruiter.ms@placementhub.org',
       name: 'Priya Rao',
       role: Role.RECRUITER,
       passwordHash,
@@ -208,7 +208,7 @@ async function main() {
   // 8. Create Alumni Mentors
   const amazonAlumniUser = await prisma.user.create({
     data: {
-      email: 'alumni.amit@amazon.com',
+      email: 'alumni.amit@placementhub.org',
       name: 'Amit Joshi',
       role: Role.ALUMNI,
       passwordHash,
@@ -231,7 +231,7 @@ async function main() {
 
   const gsAlumniUser = await prisma.user.create({
     data: {
-      email: 'alumni.sneha@goldmansachs.com',
+      email: 'alumni.sneha@placementhub.org',
       name: 'Sneha Verma',
       role: Role.ALUMNI,
       passwordHash,
@@ -1192,7 +1192,7 @@ async function main() {
       {
         alumniProfileId: amazonAlumni.id,
         postedByName: 'Amit Joshi (Alumni 2022)',
-        postedByEmail: 'alumni.amit@amazon.com',
+        postedByEmail: 'alumni.amit@placementhub.org',
         company: 'Amazon Web Services (AWS)',
         jobTitle: 'Software Development Engineer I (Cloud Storage)',
         experienceRequired: '0-1 Years / 2026 Batch',

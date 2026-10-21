@@ -66,7 +66,7 @@ def test_authentication_and_rbac():
     roles = [
         ("Student Role", "aditya.shinde@student.gcoen.ac.in", "CareerOS@2026", "STUDENT"),
         ("TPO Role", "tpo@gcoen.ac.in", "CareerOS@2026", "TPO"),
-        ("Recruiter Role", "recruiter.google@alphabet.com", "CareerOS@2026", "RECRUITER"),
+        ("Recruiter Role", "recruiter.google@placementhub.org", "CareerOS@2026", "RECRUITER"),
         ("Faculty Role", "faculty.cs@gcoen.ac.in", "CareerOS@2026", "FACULTY"),
     ]
 

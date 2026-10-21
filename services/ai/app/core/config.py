@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     OLLAMA_EMBED_MODEL: str = "nomic-embed-text"
     OLLAMA_EMBED_DIM: int = 768
     OLLAMA_KEEP_ALIVE: str = "5m"
-    DATABASE_URL: str = "postgresql+asyncpg://postgres:admin@localhost:5432/ai_service_db"
+    DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/ai_service_db"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
