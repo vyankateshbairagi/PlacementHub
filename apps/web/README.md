@@ -92,6 +92,20 @@ Navigate to [http://localhost:3000](http://localhost:3000) (or `http://localhost
 
 ---
 
+## 🔑 Demo Credentials
+
+| Stakeholder Role | Email Address | Password | Default Portal Route |
+| :--- | :--- | :--- | :--- |
+| **Super Admin** | `admin@placementhub.in` | `Admin@123` | `/super-admin` |
+| **TPO Officer** | `tpo@gcoen.ac.in` | `Tpo@123` | `/tpo` |
+| **Student** | `aditya.shinde@student.gcoen.ac.in` | `Student@123` | `/student` |
+| **Recruiter (Google)** | `recruiter.google@placementhub.org` | `Recruiter@123` | `/recruiter` |
+| **Faculty Mentor** | `faculty.cs@gcoen.ac.in` | `Faculty@123` | `/faculty` |
+| **Alumni Mentor (Microsoft)**| `alumni.microsoft@placementhub.org` | `Alumni@123` | `/alumni` |
+| **Institute Admin (Principal)**| `principal@gcoen.ac.in` | `Principal@123` | `/institute` |
+
+---
+
 ## 🎨 Design System & Aesthetic
 
 - **Headings Font**: `Sora` (via `next/font/google`)

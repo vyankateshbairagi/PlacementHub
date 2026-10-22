@@ -86,7 +86,7 @@ async function main() {
   // 3. Create Super Admin (PlacementHub Founder)
   await prisma.user.create({
     data: {
-      email: 'admin@thinkbuild.in',
+      email: 'admin@placementhub.in',
       name: 'Vyankatesh Bairagi',
       role: Role.SUPER_ADMIN,
       passwordHash,

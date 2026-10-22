@@ -188,7 +188,7 @@ Use any of these pre-seeded institutional accounts to explore specific role cons
 
 | Stakeholder Role | Email Address | Password | Default Portal Route |
 | :--- | :--- | :--- | :--- |
-| **Super Admin** | `admin@thinkbuild.in` | `Admin@123` | `/super-admin` |
+| **Super Admin** | `admin@placementhub.in` | `Admin@123` | `/super-admin` |
 | **TPO Officer** | `tpo@gcoen.ac.in` | `Tpo@123` | `/tpo` |
 | **Student** | `aditya.shinde@student.gcoen.ac.in` | `Student@123` | `/student` |
 | **Recruiter (Google)** | `recruiter.google@placementhub.org` | `Recruiter@123` | `/recruiter` |

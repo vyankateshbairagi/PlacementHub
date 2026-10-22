@@ -40,7 +40,7 @@ export const TEST_CREDENTIALS: Record<UserRole, { email: string; password: strin
     roleName: 'Principal / Admin',
   },
   SUPER_ADMIN: {
-    email: 'admin@thinkbuild.in',
+    email: 'admin@placementhub.in',
     password: 'CareerOS@2026',
     roleName: 'Super Admin',
   },
