@@ -39,5 +39,6 @@ scripts/test_results.json
 # OS / Editor Files
 .DS_Store
 Thumbs.db
+*.tsbuildinfo
 .vscode/
 .idea/

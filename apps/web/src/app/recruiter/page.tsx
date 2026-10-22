@@ -1171,7 +1171,7 @@ Join our high-scale engineering team to design, build, and deploy cloud-native i
                       >
                         <div className="font-bold text-slate-900 dark:text-white">{intv.candidateName}</div>
                         <div className="text-[11px] text-primary font-medium">
-                          {intv.roundName || `Round ${intv.roundNumber}: ${intv.roleTitle}`}
+                          {intv.roundName || intv.roleTitle}
                         </div>
                         <div className="flex items-center gap-1.5 text-slate-500 text-[10px]">
                           <Clock className="w-3 h-3" />
@@ -1183,7 +1183,7 @@ Join our high-scale engineering team to design, build, and deploy cloud-native i
                               hour: '2-digit',
                               minute: '2-digit',
                             })}{' '}
-                            ({intv.mode || 'Online'})
+                            ({intv.status || 'Scheduled'})
                           </span>
                         </div>
                       </div>
