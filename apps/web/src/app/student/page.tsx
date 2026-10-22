@@ -5337,7 +5337,7 @@ export default function StudentDashboardPage() {
                         <div className="flex flex-wrap items-center gap-3 mt-3 text-xs text-slate-600 dark:text-slate-300">
                           <span>📧 {groundedResume.email}</span>
                           <span>•</span>
-                          <span>📱 {studentProfile?.user?.phone || '+91 9765432100'}</span>
+                          <span>📱 {studentProfile?.user?.phone || '+91 9075097235'}</span>
                           {studentProfile?.githubUrl && (
                             <>
                               <span>•</span>

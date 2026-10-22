@@ -90,7 +90,7 @@ async function main() {
       name: 'Vyankatesh Bairagi',
       role: Role.SUPER_ADMIN,
       passwordHash,
-      phone: '+91 9284769125',
+      phone: '+91 9075097235',
       avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
   });
@@ -115,7 +115,7 @@ async function main() {
       role: Role.TPO,
       passwordHash,
       institutionId: gcoen.id,
-      phone: '+91 9822114455',
+      phone: '+91 9075097235',
       avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
     },
   });
@@ -284,7 +284,7 @@ async function main() {
       role: Role.STUDENT,
       passwordHash,
       institutionId: gcoen.id,
-      phone: '+91 9765432100',
+      phone: '+91 9075097235',
       avatarUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&auto=format&fit=crop&q=80',
     },
   });

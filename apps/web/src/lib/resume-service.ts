@@ -453,7 +453,7 @@ export function parseResumeText(text: string, targetRole = 'Software Engineer'):
     personalInfo: {
       fullName,
       email: email || 'student@gcoen.ac.in',
-      phone: phone || '+91 98765 43210',
+      phone: phone || '+91 9075097235',
       location: 'Pune / Bengaluru, India',
       linkedinUrl,
       githubUrl,
@@ -751,8 +751,8 @@ export async function generateCoverLetter(params: {
 
   const coverLetterText = `
 ${student.user.name}
-${student.user.email} | ${student.user.phone || '+91 98765 43210'}
-${student.linkedinUrl || 'linkedin.com/in/careeros-profile'} | ${student.githubUrl || 'github.com/careeros-profile'}
+${student.user.email} | ${student.user.phone || '+91 9075097235'}
+${student.linkedinUrl || 'linkedin.com/in/placementhub-profile'} | ${student.githubUrl || 'github.com/placementhub-profile'}
 
 Date: ${today}
 

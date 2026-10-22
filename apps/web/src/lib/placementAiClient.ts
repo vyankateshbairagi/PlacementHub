@@ -1068,7 +1068,7 @@ class PlacementAiClient {
         ];
 
     const markdown = `# ${params.student_name}
-${params.email} | ${params.phone || '+91 9765432100'} | [LinkedIn](${params.linkedin_url || 'https://linkedin.com'}) | [GitHub](${params.github_url || 'https://github.com'})
+${params.email} | ${params.phone || '+91 9075097235'} | [LinkedIn](${params.linkedin_url || 'https://linkedin.com'}) | [GitHub](${params.github_url || 'https://github.com'})
 
 ## PROFESSIONAL SUMMARY
 Evidence-backed ${targetRole} with verified technical proficiencies in ${params.verified_skills.slice(0, 4).map((s) => s.canonical_skill).join(', ')}. Demonstrated technical track record across genuine production code repositories and proctored coding assessments, maintaining a certified 94% profile integrity rating.

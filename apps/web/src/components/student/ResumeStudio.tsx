@@ -65,7 +65,7 @@ export default function ResumeStudio({
     targetRole: 'Full Stack Engineer',
     fullName: studentProfile?.user?.name || 'Vyankatesh Bairagi',
     email: studentProfile?.user?.email || 'vyankatesh.bairagi@student.gcoen.ac.in',
-    phone: studentProfile?.user?.phone || '+91 98765 43210',
+    phone: studentProfile?.user?.phone || '+91 9075097235',
     location: 'Pune / Bengaluru, India',
     linkedinUrl: studentProfile?.linkedinUrl || 'https://linkedin.com/in/vyankatesh-bairagi',
     githubUrl: studentProfile?.githubUrl || 'https://github.com/vyankatesh-bairagi',

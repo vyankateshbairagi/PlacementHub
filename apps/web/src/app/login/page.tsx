@@ -448,7 +448,7 @@ function CollegeErpLoginForm() {
               </p>
               <div className="mt-3 pt-2.5 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-[11px]">
                 <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300 font-medium">
-                  <Phone className="w-3.5 h-3.5 text-blue-600" /> +91 9822114455
+                  <Phone className="w-3.5 h-3.5 text-blue-600" /> +91 9075097235
                 </span>
                 <span className="text-slate-500 font-mono">helpdesk@gcoen.ac.in</span>
               </div>
