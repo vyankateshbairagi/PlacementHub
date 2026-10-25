@@ -87,6 +87,7 @@ PlacementHub/
 │       └── pyproject.toml     # Python dependencies
 │
 ├── docs/                      # Architectural Documentation & Runbooks
+│   ├── deployment.md          # Complete Cloud PaaS & Production Deployment Runbook
 │   ├── env.md                 # Complete environment variables guide
 │   └── product-spec.md        # Technical product specification & roles
 │
