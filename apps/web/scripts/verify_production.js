@@ -48,18 +48,19 @@ async function verifyProduction() {
 
   // Also test live login flow via API on production
   console.log('\nTesting live API authentication on production...');
+  const testPassword = process.env.TEST_PASSWORD || 'CareerOS@2026';
   try {
-    const loginRes = await page.evaluate(async (url) => {
+    const loginRes = await page.evaluate(async ({ url, password }) => {
       const res = await fetch(`${url}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email: 'tpo@gcoen.ac.in',
-          password: process.env.TEST_PASSWORD || 'CareerOS@2026',
+          password,
         }),
       });
       return { status: res.status, data: await res.json() };
-    }, PROD_URL);
+    }, { url: PROD_URL, password: testPassword });
     console.log('Production login test response:', JSON.stringify(loginRes));
   } catch (err) {
     console.error('Login test error:', err.message);

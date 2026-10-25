@@ -13,13 +13,14 @@ const PORT = parseInt(process.env.PORT || '5001', 10);
 // Restrict CORS to trusted origins
 const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',').map((o) => o.trim())
-  : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5001'];
+  : ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5001', 'https://placementhub-by.vercel.app'];
 
 app.use(
   cors({
     origin: (origin, callback) => {
       // Allow requests with no origin (like mobile apps, curl, server-to-server) or trusted origins
-      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+      const isVercel = origin && (origin.endsWith('.vercel.app') || origin === 'https://placementhub-by.vercel.app');
+      if (!origin || allowedOrigins.includes(origin) || isVercel || process.env.NODE_ENV !== 'production') {
         callback(null, true);
       } else {
         callback(new Error(`Origin ${origin} not allowed by CORS`));
